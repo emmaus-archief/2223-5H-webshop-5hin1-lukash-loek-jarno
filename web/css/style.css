@@ -1,5 +1,13 @@
 /* all pages */
 
+header {
+
+}
+
+body {
+  background-color: #72929d;
+}
+
 footer {
   margin: 20px;
   font-size: 12px;
@@ -16,10 +24,12 @@ footer {
 .shop-button {
   font-size: 15px;
   margin-top: -4px;
+  background-color: #d7d7db;
 }
 
 .article-container {
   margin: auto;
+  
 }
 
 .card {

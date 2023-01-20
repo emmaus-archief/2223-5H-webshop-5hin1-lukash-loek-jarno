@@ -270,5 +270,4 @@ function sendMail(subject, body, recipent) {
       console.log('Email sent: ' + info.response);
     }
   });
-
 } 
