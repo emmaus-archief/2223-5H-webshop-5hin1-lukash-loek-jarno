@@ -27,3 +27,10 @@ insert into products (name, description, code, price) values ('gym Accessoires',
 insert into products (name, description, code, price) values ('powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
 insert into products (name, description, code, price) values ('', 'Guerilla Gym exclusive', '686928463-6', 14);
 insert into products (name, description, code, price) values ('shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
+
+CREATE TABLE products (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+ product_id integer),
+  description TEXT,
+ 
+);
