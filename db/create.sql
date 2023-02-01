@@ -31,6 +31,6 @@ insert into products (name, description, code, price) values ('shorts', 'Guerill
 CREATE TABLE products (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
  product_id integer),
-  description TEXT,
- 
+  reviews,
 );
+
