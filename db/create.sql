@@ -10,7 +10,20 @@ CREATE TABLE products (
   price NUMERIC(10, 2)
 );
 
+CREATE TABLE reviews (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+ auteur_id INTEGER,
+ product_id INTEGER,
+  opmerking TEXT,
+  rating TEXT,
+  );
 
+CREATE TABLE auteur (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+ auteurtext TEXT,
+  
+  
+);
 --
 -- populate with data
 --
@@ -20,22 +33,18 @@ CREATE TABLE products (
 -- want different data? check: https://www.mockaroo.com/910b6c20
 --
 
---men Accessoires
-insert into products (name, description, code, price) values ('shoes', 'Guerilla Gym exclusive for men', '816905633-0', 10.5);
+--informatie voor table producten
+insert into products (name, description, code, price) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 10.5);
 insert into products (name, description, code, price) values ('T-Shirts', 'Guerilla Gym exclusive for men.', '077030122-3', 11);
-insert into products (name, description, code, price) values ('gym Accessoires', 'Guerilla Gym exclusive.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
-insert into products (name, description, code, price) values ('', 'Guerilla Gym exclusive', '686928463-6', 14);
-insert into products (name, description, code, price) values ('shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
+insert into products (name, description, code, price) values ('Gym Accessoires', 'Guerilla Gym exclusive.', '445924201-X', 13.5);
+insert into products (name, description, code, price) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
+insert into products (name, description, code, price) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 14);
+insert into products (name, description, code, price) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
 
-CREATE TABLE reviews (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
- product_id integer),
-  opmerking varchar
-  rating varchar (15)
-  );
-
-insert into reviews(opmerking, rating, product_id) values ('Het tshirt is van goede kwaliteit en zit erg comfortabel', '8/10', 2);  
-insert into reviews(auteur, opmerking, rating, product_id) values ('Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
-insert into reviews(auteur, opmerking, rating,  product_id) values('Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
-insert into reviews(auteur, opmerking, rating,  product_id) values ('mijn bestelling kwam redeljk snel en was van goede kwaliteit', '7/10', 5);
+-- informatie voor table reviews
+insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Super kwaliteti ondanks dat het goedkoop is!', '8/10', 1);
+insert into reviews(auteur_id, opmerking, rating, product_id) values ('Het tshirt is van goede kwaliteit en zit erg comfortabel.', '8/10', 2);  
+insert into reviews(auteur_id, auteur, opmerking, rating, product_id) values ('Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values('Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values ('mijn bestelling kwam redeljk snel en was van goede kwaliteit.', '7/10', 5);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values ('schoenen zitten erg lekker en een goede levering, ik zou wel de schoenen een maat kleiner bestellen.', '7/10', 6);
