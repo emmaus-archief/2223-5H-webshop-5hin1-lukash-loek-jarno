@@ -28,9 +28,14 @@ insert into products (name, description, code, price) values ('powerlifting', 'G
 insert into products (name, description, code, price) values ('', 'Guerilla Gym exclusive', '686928463-6', 14);
 insert into products (name, description, code, price) values ('shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
 
-CREATE TABLE products (
+CREATE TABLE reviews (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
  product_id integer),
-  reviews,
-);
+  opmerking varchar
+  rating varchar (15)
+  );
 
+insert into reviews(opmerking, rating, product_id) values ('Het tshirt is van goede kwaliteit en zit erg comfortabel', '8/10', 2);  
+insert into reviews(auteur, opmerking, rating, product_id) values ('Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
+insert into reviews(auteur, opmerking, rating,  product_id) values('Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
+insert into reviews(auteur, opmerking, rating,  product_id) values ('mijn bestelling kwam redeljk snel en was van goede kwaliteit', '7/10', 5);
