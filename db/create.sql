@@ -40,6 +40,7 @@ insert into products (name, description, code, price) values ('Gym Accessoires',
 insert into products (name, description, code, price) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
 insert into products (name, description, code, price) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 14);
 insert into products (name, description, code, price) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
+insert into products (name, description, code, price) values ('Supplements', 'Guerilla Gym exclusive. ', '492665523-7', 20);
 
 -- informatie voor table reviews
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Super kwaliteti ondanks dat het goedkoop is!', '8/10', 1);
