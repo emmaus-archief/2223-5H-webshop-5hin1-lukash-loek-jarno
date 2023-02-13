@@ -11,16 +11,16 @@ CREATE TABLE products (
 );
 
 CREATE TABLE reviews (
-  id INTEGER PRIMARY KEY AUTOINCREMENT,
+id INTEGER PRIMARY KEY AUTOINCREMENT,
  auteur_id INTEGER,
  product_id INTEGER,
   opmerking TEXT,
-  rating TEXT
+  rating NUMERIC(1, 10)
   );
 
 CREATE TABLE auteur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
- auteurtext TEXT
+ name VARCHAR(255)
 );
 --
 -- populate with data
@@ -46,16 +46,17 @@ insert into products (name, description, code, price) values ('product 4', 'Guer
 insert into products (name, description, code, price) values ('product 5', 'Guerilla Gym exclusive. ', '912665523-7', 10);
 
 -- informatie voor table reviews
-insert into reviews(auteur_id, opmerking, rating,  product_id) values ('gemairo van Essen', 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
-insert into reviews(auteur_id, opmerking, rating, product_id) values ('Joop Bakker', 'Het tshirt is van goede kwaliteit en zit erg comfortabel.', '8/10', 2);  
-insert into reviews(auteur_id, opmerking, rating, product_id) values ('010lover', 'Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
-insert into reviews(auteur_id, opmerking, rating,  product_id) values('gymmeneer123', 'Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
-insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Mnr. de Voet', 'mijn bestelling kwam redeljk snel en was van goede kwaliteit.', '7/10', 5);
-insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Mvr. ei', 'schoenen zitten erg lekker en een goede levering, ik zou wel de schoenen een maat kleiner bestellen.', '7/10', 6);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values ( 3, 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
+insert into reviews(auteur_id, opmerking, rating, product_id) values (2, 'Het tshirt is van goede kwaliteit en zit erg comfortabel.', '8/10', 2);  
+insert into reviews(auteur_id, opmerking, rating, product_id) values (1, 'Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values(4, 'Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values (5, 'mijn bestelling kwam redeljk snel en was van goede kwaliteit.', '7/10', 5);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values (6, 'schoenen zitten erg lekker en een goede levering, ik zou wel de schoenen een maat kleiner bestellen.', '7/10', 6);
 
-insert into auteur
-insert into auteur
-insert into auteur
-insert into auteur
-insert into auteur
-insert into auteur
+--auteur_id
+insert into auteur (name) values ('gemairo van Essen');
+insert into auteur (name) values ('Joop Bakker');
+insert into auteur (name) values ('010lover');
+insert into auteur (name) values ('gymmeneer123');
+insert into auteur (name) values ('Mnr. de Voet');
+insert into auteur (name) values ('Mvr. ei');
