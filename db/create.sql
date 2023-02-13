@@ -46,9 +46,16 @@ insert into products (name, description, code, price) values ('product 4', 'Guer
 insert into products (name, description, code, price) values ('product 5', 'Guerilla Gym exclusive. ', '912665523-7', 10);
 
 -- informatie voor table reviews
-insert into reviews(auteur_id, opmerking, rating,  product_id) values ('gemairo van Essen', 'Super kwaliteti ondanks dat het goedkoop is!', '8/10', 1);
+insert into reviews(auteur_id, opmerking, rating,  product_id) values ('gemairo van Essen', 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
 insert into reviews(auteur_id, opmerking, rating, product_id) values ('Joop Bakker', 'Het tshirt is van goede kwaliteit en zit erg comfortabel.', '8/10', 2);  
 insert into reviews(auteur_id, opmerking, rating, product_id) values ('010lover', 'Mijn bestelling kwam erg snel en zonder problemen binnen.', '9/10', 3);
 insert into reviews(auteur_id, opmerking, rating,  product_id) values('gymmeneer123', 'Mijn bestelling was erg duur en was van slechte kwaliteit.', '3/10', 4);
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Mnr. de Voet', 'mijn bestelling kwam redeljk snel en was van goede kwaliteit.', '7/10', 5);
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ('Mvr. ei', 'schoenen zitten erg lekker en een goede levering, ik zou wel de schoenen een maat kleiner bestellen.', '7/10', 6);
+
+insert into auteur
+insert into auteur
+insert into auteur
+insert into auteur
+insert into auteur
+insert into auteur
