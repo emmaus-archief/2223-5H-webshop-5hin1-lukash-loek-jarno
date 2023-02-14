@@ -1,7 +1,7 @@
 /* all pages */
 
-header {
-
+head{
+background-color: #000000;
 }
 
 body {
@@ -36,6 +36,7 @@ footer {
   width:200px; 
   height: 700px; 
   margin-bottom: 20px
+  
 }
 
 .card-header {
