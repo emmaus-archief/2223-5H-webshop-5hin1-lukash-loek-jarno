@@ -26,7 +26,7 @@ app.use(express.static('../web'))
 
 // definieer startpunten voor de API-server
 app.get('/api/echo', echoRequest)
-app.get('/api/categories', getCategories)
+app.get('/api/reviews', getreviews)
 app.get('/api/products', getProducts)
 app.get('/api/products/:id', getProductById)
 //app.get('/api/products/:id/related', db.getRelatedProductsById)
@@ -54,14 +54,15 @@ function echoRequest(request, response) {
   response.status(200).send(request.query)
 }
 
-function getCategories(request, response) {
-  console.log('API ontvangt /api/categories/')
+function getreviews(request, response) {
+  console.log('API ontvangt /api/reviews/')
   // TODO: breid database uit zodat onderstaande query een lijstje categoriën levert.
-  const sqlOpdracht = db.prepare('SELECT categories.name AS category_name FROM categories ORDER BY id ASC')
+  const sqlOpdracht = db.prepare('SELECT reviews AS id, auteur_id AS id, reviews.opmerking AS opmerking, reviews.rating AS Rating From reviews JOIN products ON ')
+  
   const data = sqlOpdracht.all()
   // console.log(JSON.stringify(data, null, 2))
   response.status(200).send(data)
-  console.log('API verstuurt /api/categories/')
+  console.log('API verstuurt /api/reviews/')
 }
 
 function getProducts(request, response) {
