@@ -23,6 +23,16 @@ CREATE TABLE auteur (
  name VARCHAR(255)
 );
 
+CREATE TABLE Clothes (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  products_id INTEGER
+);
+
+CREATE TABLE accessories(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  products_id INTEGER
+ 
+);
 
 
 
