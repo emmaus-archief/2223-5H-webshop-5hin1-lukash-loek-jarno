@@ -25,13 +25,14 @@ CREATE TABLE auteur (
 
 CREATE TABLE Clothes (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  products_id INTEGER
+  products_id INTEGER,
+   name TEXT
 );
 
 CREATE TABLE accessories(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  products_id INTEGER
- 
+  products_id INTEGER,
+   name TEXT
 );
 
 
@@ -54,10 +55,10 @@ insert into products (name, description, code, price) values ('Hoodies & Sweater
 insert into products (name, description, code, price) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
 insert into products (name, description, code, price) values ('protein', 'Guerilla Gym exclusive. ', '492665523-7', 20);
 insert into products (name, description, code, price) values ('sleeves', 'Guerilla Gym exclusive. ', '192665523-7', 10);
-insert into products (name, description, code, price) values ('product 2', 'Guerilla Gym exclusive. ', '292665523-7', 10);
-insert into products (name, description, code, price) values ('product 3', 'Guerilla Gym exclusive. ', '392665523-7', 10);
-insert into products (name, description, code, price) values ('product 4', 'Guerilla Gym exclusive. ', '992665523-7', 10);
-insert into products (name, description, code, price) values ('product 5', 'Guerilla Gym exclusive. ', '912665523-7', 10);
+insert into products (name, description, code, price) values ('belt', 'Guerilla Gym exclusive. ', '292665523-7', 10);
+insert into products (name, description, code, price) values ('gloves', 'Guerilla Gym exclusive. ', '392665523-7', 10);
+insert into products (name, description, code, price) values ('cap', 'Guerilla Gym exclusive. ', '992665523-7', 10);
+insert into products (name, description, code, price) values ('shakecup', 'Guerilla Gym exclusive. ', '912665523-7', 10);
 
 -- informatie voor table reviews
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ( 3, 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
@@ -75,5 +76,18 @@ insert into auteur (name) values ('gymmeneer123');
 insert into auteur (name) values ('Mnr. de Voet');
 insert into auteur (name) values ('Mvr. ei');
 
--- 
-insert into
+-- clothes
+insert into  clothes (name, products_id) values ('Shoes', 1);
+insert into  clothes (name, products_id) values ('T-shirts', 2);
+insert into  clothes (name, products_id) values ('Hoodies & Sweaters', 5);
+insert into  clothes (name, products_id) values ('Shorts', 6);
+insert into  clothes (name, products_id) values ('gloves', 10);
+insert into  clothes (name, products_id) values ('cap', 11);
+
+--accessories
+insert into  accessories (name, products_id) values ('straps', 3);
+insert into  accessories (name, products_id) values ('Powerlifting', 4);
+insert into  accessories (name, products_id) values ('protein', 7);
+insert into  accessories (name, products_id) values ('sleeves', 8);
+insert into  accessories (name, products_id) values ('belt', 9);
+insert into  accessories (name, products_id) values ('shakecup', 12);
