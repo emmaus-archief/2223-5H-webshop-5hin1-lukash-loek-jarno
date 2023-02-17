@@ -74,3 +74,6 @@ insert into auteur (name) values ('010lover');
 insert into auteur (name) values ('gymmeneer123');
 insert into auteur (name) values ('Mnr. de Voet');
 insert into auteur (name) values ('Mvr. ei');
+
+-- 
+insert into
