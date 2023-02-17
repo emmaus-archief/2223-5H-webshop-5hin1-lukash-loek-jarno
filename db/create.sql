@@ -22,6 +22,10 @@ CREATE TABLE auteur (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
  name VARCHAR(255)
 );
+
+
+
+
 --
 -- populate with data
 --
