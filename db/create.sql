@@ -7,7 +7,9 @@ CREATE TABLE products (
   code VARCHAR(15),
   name VARCHAR(255),
   description TEXT,
-  price NUMERIC(10, 2)
+  price NUMERIC(10, 2),
+  clothes_id VARCHAR
+  accessories_id VARCHAR
 );
 
 CREATE TABLE reviews (
@@ -47,9 +49,9 @@ CREATE TABLE accessories(
 --
 
 --informatie voor table producten
-insert into products (name, description, code, price) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 10.5);
+insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 10.5, 1);
 insert into products (name, description, code, price) values ('T-Shirts', 'Guerilla Gym exclusive for men.', '077030122-3', 11);
-insert into products (name, description, code, price) values ('straps', 'Guerilla Gym exclusive.', '445924201-X', 13.5);
+insert into products (name, description, code, price ) values ('straps', 'Guerilla Gym exclusive.', '445924201-X', 13.5);
 insert into products (name, description, code, price) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
 insert into products (name, description, code, price) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 14);
 insert into products (name, description, code, price) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
