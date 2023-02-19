@@ -49,18 +49,18 @@ CREATE TABLE accessories(
 --
 
 --informatie voor table producten
-insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 49.99, 1);
-insert into products (name, description, code, price, clothes_id) values ('T-Shirts', 'Guerilla Gym exclusive for men.', '077030122-3', 24.99, 2);
-insert into products (name, description, code, price, accessories_id) values ('straps', 'Guerilla Gym exclusive.', '445924201-X', 13.99, 1);
-insert into products (name, description, code, price, accessories_id) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5, 2);
-insert into products (name, description, code, price, clothes_id) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 29.99, 3);
-insert into products (name, description, code, price, clothes_id) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 15.99, 4);
-insert into products (name, description, code, price,  accessories_id) values ('1 Kg Whey protein', 'Guerilla Gym exclusive. ', '492665523-7', 39.99, 3);
-insert into products (name, description, code, price,  accessories_id) values ('sleeves', 'Guerilla Gym exclusive. ', '192665523-7', 24.99, 4);
-insert into products (name, description, code, price,  accessories_id) values ('belt', 'Guerilla Gym exclusive. ', '292665523-7', 49.99, 5);
-insert into products (name, description, code, price, clothes_id) values ('gloves', 'Guerilla Gym exclusive. ', '392665523-7', 9.99, 5);
-insert into products (name, description, code, price, clothes_id) values ('cap', 'Guerilla Gym exclusive. ', '992665523-7', 12.99, 6);
-insert into products (name, description, code, price,  accessories_id) values ('shakecup', 'Guerilla Gym exclusive. ', '912665523-7', 4.99, 6);
+insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for Men and Women. ', '000674978-0', 49.99, 1);
+insert into products (name, description, code, price, clothes_id) values ('T-Shirts', 'Guerilla Gym exclusive for Men and Women.', '077030122-3', 24.99, 2);
+insert into products (name, description, code, price, accessories_id) values ('Straps', 'Guerilla Gym exclusive for the best experience.', '555924201-X', 13.99, 1);
+insert into products (name, description, code, price, accessories_id) values ('Powerlifting', 'Guerilla Gym exclusive for Men and Women.', '693166505-7', 13.5, 2);
+insert into products (name, description, code, price, clothes_id) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive for Men and Women', '686668463-6', 29.99, 3);
+insert into products (name, description, code, price, clothes_id) values ('Shorts', 'Guerilla Gym exclusive for Men and Women. ', '492662523-7', 15.99, 4);
+insert into products (name, description, code, price,  accessories_id) values ('1 Kg Whey protein', 'Guerilla Gym exclusive For the GAINS. ', '492665623-7', 39.99, 3);
+insert into products (name, description, code, price,  clothes_id) values ('Sweatpants', 'Guerilla Gym exclusive for Men and Women. ', '192665589-7', 24.99, 5);
+insert into products (name, description, code, price,  accessories_id) values ('Belt', 'Guerilla Gym exclusive made with the best quality. ', '292665590-7', 49.99, 4);
+insert into products (name, description, code, price, clothes_id) values ('Gloves', 'Guerilla Gym exclusive. ', '392665703-7', 9.99, 6);
+insert into products (name, description, code, price, clothes_id) values ('Cap', 'Guerilla Gym exclusive . ', '992666023-7', 12.99, 7);
+insert into products (name, description, code, price,  accessories_id) values ('Shakecup', 'Guerilla Gym exclusive made for the shake. ', '912650523-7', 4.99, 5);
 
 -- informatie voor table reviews
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ( 3, 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
@@ -83,6 +83,7 @@ insert into  clothes (name, products_id) values ('Shoes', 1);
 insert into  clothes (name, products_id) values ('T-shirts', 2);
 insert into  clothes (name, products_id) values ('Hoodies & Sweaters', 5);
 insert into  clothes (name, products_id) values ('Shorts', 6);
+insert into  clothes (name, products_id) values ('Sweatpants', 8);
 insert into  clothes (name, products_id) values ('gloves', 10);
 insert into  clothes (name, products_id) values ('cap', 11);
 
@@ -90,6 +91,5 @@ insert into  clothes (name, products_id) values ('cap', 11);
 insert into  accessories (name, products_id) values ('straps', 3);
 insert into  accessories (name, products_id) values ('Powerlifting', 4);
 insert into  accessories (name, products_id) values ('protein', 7);
-insert into  accessories (name, products_id) values ('sleeves', 8);
 insert into  accessories (name, products_id) values ('belt', 9);
 insert into  accessories (name, products_id) values ('shakecup', 12);
