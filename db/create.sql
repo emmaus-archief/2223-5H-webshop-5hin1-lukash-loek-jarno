@@ -57,7 +57,7 @@ CREATE TABLE accessories(
 insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for Men and Women. ', '000674978-0', 49.99, 1);
 insert into products (name, description, code, price, clothes_id) values ('T-Shirts', 'Guerilla Gym exclusive for Men and Women.', '077030122-3', 24.99, 2);
 insert into products (name, description, code, price, accessories_id) values ('Straps', 'Guerilla Gym exclusive for the best experience.', '555924201-X', 13.99, 1);
-insert into products (name, description, code, price, accessories_id) values ('Powerlifting', 'Guerilla Gym exclusive for Men and Women.', '693166505-7', 13.5, 2);
+insert into products (name, description, code, price, accessories_id) values ('Sportdrinks', 'Guerilla Gym exclusive for Men and Women.', '693166505-7', 1.99, 2);
 insert into products (name, description, code, price, clothes_id) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive for Men and Women', '686668463-6', 29.99, 3);
 insert into products (name, description, code, price, clothes_id) values ('Shorts', 'Guerilla Gym exclusive for Men and Women. ', '492662523-7', 15.99, 4);
 insert into products (name, description, code, price,  accessories_id) values ('1 Kg Whey protein', 'Guerilla Gym exclusive For the GAINS. ', '492665623-7', 39.99, 3);
@@ -94,7 +94,7 @@ insert into  clothes (name, products_id) values ('cap', 11);
 
 --voorwerpen
 insert into  accessories (name, products_id) values ('straps', 3);
-insert into  accessories (name, products_id) values ('Powerlifting', 4);
+insert into  accessories (name, products_id) values ('Sportdrinks', 4);
 insert into  accessories (name, products_id) values ('protein', 7);
 insert into  accessories (name, products_id) values ('belt', 9);
 insert into  accessories (name, products_id) values ('shakecup', 12);
