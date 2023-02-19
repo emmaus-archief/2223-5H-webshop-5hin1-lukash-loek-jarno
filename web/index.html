@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="nl">
 
-<head>
+<head1>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/style.css">
-</head>
+</head1>
 
 <body>
   <!-- toast is een melding die tijdelijk rechtsboven op het scherm verschijnt -->
@@ -58,6 +58,7 @@
 					<p class="product_description card-text"></p>
 					<ul class="product-properties">
 						<li><span class="propert-name">Prijs:</span><span class="product_price"></span></li>
+            <li><span class="propert-name">clothes:</span><span class="product_clothes"></span></li>
 						<li><span class="propert-name">Code:</span><span class="product_code"></span></li>
 					</ul>
 					<input class="product_amount" type="number" value="1" min="1">
@@ -123,6 +124,7 @@
               clone.querySelector(".product_description").textContent =`${product.description.substr(0, 100)}...`
               clone.querySelector(".product_price").textContent = `€ ${product.price.toFixed(2)}`
               clone.querySelector(".product_code").textContent = product.code
+              clone.querySelector(".product_clothes").textContent =`${product.clothes} `
               clone.querySelector(".product_id").value = product.id
               clone.querySelector(".product_id").dataset.json = JSON.stringify(product)
               clone.querySelector(".product_image").src =`/images/${product.id}.jpg`
@@ -140,8 +142,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
 	</script>
-</body>
-<style>
+  <style>
   body {
     margin: 0;
     padding: 0;
@@ -152,4 +153,5 @@
     background-position: center;
        }
 </style>
+</body>
 </html>
