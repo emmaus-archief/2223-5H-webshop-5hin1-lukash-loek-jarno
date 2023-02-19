@@ -8,7 +8,7 @@ CREATE TABLE products (
   name VARCHAR(255),
   description TEXT,
   price NUMERIC(10, 2),
-  clothes_id VARCHAR
+  clothes_id VARCHAR,
   accessories_id VARCHAR
 );
 
@@ -49,18 +49,18 @@ CREATE TABLE accessories(
 --
 
 --informatie voor table producten
-insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 10.5, 1);
-insert into products (name, description, code, price) values ('T-Shirts', 'Guerilla Gym exclusive for men.', '077030122-3', 11);
-insert into products (name, description, code, price ) values ('straps', 'Guerilla Gym exclusive.', '445924201-X', 13.5);
-insert into products (name, description, code, price) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5);
-insert into products (name, description, code, price) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 14);
-insert into products (name, description, code, price) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 14);
-insert into products (name, description, code, price) values ('protein', 'Guerilla Gym exclusive. ', '492665523-7', 20);
-insert into products (name, description, code, price) values ('sleeves', 'Guerilla Gym exclusive. ', '192665523-7', 10);
-insert into products (name, description, code, price) values ('belt', 'Guerilla Gym exclusive. ', '292665523-7', 10);
-insert into products (name, description, code, price) values ('gloves', 'Guerilla Gym exclusive. ', '392665523-7', 10);
-insert into products (name, description, code, price) values ('cap', 'Guerilla Gym exclusive. ', '992665523-7', 10);
-insert into products (name, description, code, price) values ('shakecup', 'Guerilla Gym exclusive. ', '912665523-7', 10);
+insert into products (name, description, code, price, clothes_id ) values ('Shoes', 'Guerilla Gym exclusive for men', '816905633-0', 49.99, 1);
+insert into products (name, description, code, price, clothes_id) values ('T-Shirts', 'Guerilla Gym exclusive for men.', '077030122-3', 24.99, 2);
+insert into products (name, description, code, price, accessories_id) values ('straps', 'Guerilla Gym exclusive.', '445924201-X', 13.99, 1);
+insert into products (name, description, code, price, accessories_id) values ('Powerlifting', 'Guerilla Gym exclusive for men.', '693155505-7', 13.5, 2);
+insert into products (name, description, code, price, clothes_id) values ('Hoodies & Sweaters', 'Guerilla Gym exclusive', '686928463-6', 29.99, 3);
+insert into products (name, description, code, price, clothes_id) values ('Shorts', 'Guerilla Gym exclusive. ', '492662523-7', 15.99, 4);
+insert into products (name, description, code, price,  accessories_id) values ('1 Kg Whey protein', 'Guerilla Gym exclusive. ', '492665523-7', 39.99, 3);
+insert into products (name, description, code, price,  accessories_id) values ('sleeves', 'Guerilla Gym exclusive. ', '192665523-7', 24.99, 4);
+insert into products (name, description, code, price,  accessories_id) values ('belt', 'Guerilla Gym exclusive. ', '292665523-7', 49.99, 5);
+insert into products (name, description, code, price, clothes_id) values ('gloves', 'Guerilla Gym exclusive. ', '392665523-7', 9.99, 5);
+insert into products (name, description, code, price, clothes_id) values ('cap', 'Guerilla Gym exclusive. ', '992665523-7', 12.99, 6);
+insert into products (name, description, code, price,  accessories_id) values ('shakecup', 'Guerilla Gym exclusive. ', '912665523-7', 4.99, 6);
 
 -- informatie voor table reviews
 insert into reviews(auteur_id, opmerking, rating,  product_id) values ( 3, 'Super kwaliteit ondanks dat het goedkoop is!', '8/10', 1);
